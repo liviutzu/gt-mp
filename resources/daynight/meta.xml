@@ -1,9 +1,0 @@
-<meta>
-    <info name="DayNight" description="Basic day/night script." author="rootcause" type="script" />
-    
-    <script src="DayNight.cs" type="server" lang="csharp" />
-    <script src="DayNight.js" type="client" lang="javascript" />
-	
-	<file src="iconDay.png" />
-	<file src="iconNight.png" />
-</meta>
