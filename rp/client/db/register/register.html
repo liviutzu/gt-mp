@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<script>
+    var email = null;
+    var password = null;
+
+    function logPlayer() {
+        email = document.getElementById("Email").value;
+        password = document.getElementById("Passwod").value;
+        resourceCall("register", email, password);
+    };
+    
+</script>
+
+<html lang="en">
+<head>
+    <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="login-form">
+        <form>
+            <div class="form-group log-status">
+                <h2>Welcome</h2>
+
+                <h3 id="name"></h3>
+            </div>
+            <div class="form-group log-status">
+                <input type="email" class="form-control" placeholder="Email" id="Email">
+                <i class="fa fa-lock"></i>
+            </div>
+            <div class="form-group log-status">
+                <input type="password" class="form-control" placeholder="Password" id="Passwod">
+                <i class="fa fa-lock"></i>
+            </div>
+            <div class="wrong" id="wrong"></div>
+            <button type="button" onclick="logPlayer();" class="log-btn" id="login">Register</button>
+        </form>
+    </div>
+</body>
+</html>

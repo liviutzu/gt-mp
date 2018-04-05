@@ -1,0 +1,354 @@
+        #region Server_Commands
+
+        #region get
+        public static int getPlayerMoney(string target)
+        {
+            int money;
+            string stringMySQLQuery = "SELECT * FROM `users` WHERE `username` = '" + target + "'";
+            MySqlDataReader readerMySQL = new MySqlCommand(stringMySQLQuery, mysqlHandler.connectionMySQL).ExecuteReader();
+
+            readerMySQL.Read();
+            money = readerMySQL.GetInt32("bani");
+            readerMySQL.Close();
+
+            return money;
+        }
+        public static string getPlayerUser(string target)
+        {
+            string valoare;
+            string stringMySQLQuery = "SELECT * FROM `users` WHERE `username` = '" + target + "'";
+            MySqlDataReader readerMySQL = new MySqlCommand(stringMySQLQuery, mysqlHandler.connectionMySQL).ExecuteReader();
+
+            readerMySQL.Read();
+            valoare = readerMySQL.GetString("username");
+            readerMySQL.Close();
+
+            return valoare;
+        }
+        public static string getPlayerNume(string target)
+        {
+            string nume;
+
+            string stringMySQLQuery = "SELECT * FROM `users` WHERE `username` = '" + target + "'";
+            MySqlDataReader readerMySQL = new MySqlCommand(stringMySQLQuery, mysqlHandler.connectionMySQL).ExecuteReader();
+
+            readerMySQL.Read();
+            nume = readerMySQL.GetString("nume");
+            readerMySQL.Close();
+
+            return nume;
+        }
+        public static string getPlayerPrenume(string target)
+        {
+            string prenume;
+
+            string stringMySQLQuery = "SELECT * FROM `users` WHERE `username` = '" + target + "'";
+            MySqlDataReader readerMySQL = new MySqlCommand(stringMySQLQuery, mysqlHandler.connectionMySQL).ExecuteReader();
+
+            readerMySQL.Read();
+            prenume = readerMySQL.GetString("prenume");
+            readerMySQL.Close();
+
+            return prenume;
+        }
+        public static string getPlayerCNP(string target)
+        {
+            string cnp;
+
+            string stringMySQLQuery = "SELECT * FROM `users` WHERE `username` = '" + target + "'";
+            MySqlDataReader readerMySQL = new MySqlCommand(stringMySQLQuery, mysqlHandler.connectionMySQL).ExecuteReader();
+
+            readerMySQL.Read();
+            cnp = readerMySQL.GetString("cnp");
+            readerMySQL.Close();
+
+            return cnp;
+        }
+        public static int getPlayerWarning(string target)
+        {
+            int warning;
+
+            string stringMySQLQuery = "SELECT * FROM `users` WHERE `username` = '" + target + "'";
+            MySqlDataReader readerMySQL = new MySqlCommand(stringMySQLQuery, mysqlHandler.connectionMySQL).ExecuteReader();
+
+            readerMySQL.Read();
+            warning = readerMySQL.GetInt32("warning");
+            readerMySQL.Close();
+
+            return warning;
+        }
+        public static string getPlayerVarsta(string target)
+        {
+            string varsta;
+
+            string stringMySQLQuery = "SELECT * FROM `users` WHERE `username` = '" + target + "'";
+            MySqlDataReader readerMySQL = new MySqlCommand(stringMySQLQuery, mysqlHandler.connectionMySQL).ExecuteReader();
+
+            readerMySQL.Read();
+            varsta = readerMySQL.GetString("varsta");
+            readerMySQL.Close();
+
+            return varsta;
+        }
+        public static int getPlayerCard(string target)
+        {
+            int card;
+
+            string stringMySQLQuery = "SELECT * FROM `users` WHERE `username` = '" + target + "'";
+            MySqlDataReader readerMySQL = new MySqlCommand(stringMySQLQuery, mysqlHandler.connectionMySQL).ExecuteReader();
+
+            readerMySQL.Read();
+            card = readerMySQL.GetInt32("card");
+            readerMySQL.Close();
+
+            return card;
+        }
+        public static string getPlayerTara(string target)
+        {
+            string Tara;
+
+            string stringMySQLQuery = "SELECT * FROM `users` WHERE `username` = '" + target + "'";
+            MySqlDataReader readerMySQL = new MySqlCommand(stringMySQLQuery, mysqlHandler.connectionMySQL).ExecuteReader();
+
+            readerMySQL.Read();
+            Tara = readerMySQL.GetString("tara");
+            readerMySQL.Close();
+
+            return Tara;
+        }
+        public static string getPlayerEmail(string target)
+        {
+            string result;
+
+            string stringMySQLQuery = "SELECT * FROM `users` WHERE `username` = '" + target + "'";
+            MySqlDataReader readerMySQL = new MySqlCommand(stringMySQLQuery, mysqlHandler.connectionMySQL).ExecuteReader();
+
+            readerMySQL.Read();
+            result = readerMySQL.GetString("email");
+            readerMySQL.Close();
+
+            return result;
+        }
+        public static int getPlayerViata(string target)
+        {
+            int result;
+
+            string stringMySQLQuery = "SELECT * FROM `users` WHERE `username` = '" + target + "'";
+            MySqlDataReader readerMySQL = new MySqlCommand(stringMySQLQuery, mysqlHandler.connectionMySQL).ExecuteReader();
+
+            readerMySQL.Read();
+            result = readerMySQL.GetInt32("viata");
+            readerMySQL.Close();
+
+            return result;
+        }
+        public static int getPlayerArmura(string target)
+        {
+            int result;
+
+            string stringMySQLQuery = "SELECT * FROM `users` WHERE `username` = '" + target + "'";
+            MySqlDataReader readerMySQL = new MySqlCommand(stringMySQLQuery, mysqlHandler.connectionMySQL).ExecuteReader();
+
+            readerMySQL.Read();
+            result = readerMySQL.GetInt32("armura");
+            readerMySQL.Close();
+
+            return result;
+        }
+        public static float getPlayerMancare(string target)
+        {
+            float result;
+
+            string stringMySQLQuery = "SELECT * FROM `users` WHERE `username` = '" + target + "'";
+            MySqlDataReader readerMySQL = new MySqlCommand(stringMySQLQuery, mysqlHandler.connectionMySQL).ExecuteReader();
+
+            readerMySQL.Read();
+            result = readerMySQL.GetFloat("mancare");
+            readerMySQL.Close();
+
+            return result;
+        }
+        public static float getPlayerSete(string target)
+        {
+            float result;
+
+            string stringMySQLQuery = "SELECT * FROM `users` WHERE `username` = '" + target + "'";
+            MySqlDataReader readerMySQL = new MySqlCommand(stringMySQLQuery, mysqlHandler.connectionMySQL).ExecuteReader();
+
+            readerMySQL.Read();
+            result = readerMySQL.GetFloat("sete");
+            readerMySQL.Close();
+
+            return result;
+        }
+        public static int getPlayerID(string target)
+        {
+            int result;
+
+            string stringMySQLQuery = "SELECT * FROM `users` WHERE `username` = '" + target + "'";
+            MySqlDataReader readerMySQL = new MySqlCommand(stringMySQLQuery, mysqlHandler.connectionMySQL).ExecuteReader();
+
+            readerMySQL.Read();
+            result = readerMySQL.GetInt32("id");
+            readerMySQL.Close();
+
+            return result;
+        }
+        #endregion
+
+        #region set
+        public static void setPlayerMoney(string target, int money)
+        {
+            string stringMySQLQuery = "UPDATE `users` SET `bani` = '" + money + "' WHERE `username` = '" + target + "'";
+
+            MySqlCommand readerMySQL = new MySqlCommand(stringMySQLQuery, mysqlHandler.connectionMySQL);
+
+            readerMySQL.ExecuteNonQuery();
+
+            readerMySQL.Cancel();
+        }
+        public static void setPlayerPassword(string target, string password)
+        {
+            string stringMySQLQuery = "UPDATE `users` SET `password` = '" + password + "' WHERE `username` = '" + target + "'";
+
+            MySqlCommand readerMySQL = new MySqlCommand(stringMySQLQuery, mysqlHandler.connectionMySQL);
+
+            readerMySQL.ExecuteNonQuery();
+
+            readerMySQL.Cancel();
+        }
+        public static void setPlayerEmail(string target, string email)
+        {
+            string stringMySQLQuery = "UPDATE `users` SET `email` = '" + email + "' WHERE `username` = '" + target + "'";
+
+            MySqlCommand readerMySQL = new MySqlCommand(stringMySQLQuery, mysqlHandler.connectionMySQL);
+
+            readerMySQL.ExecuteNonQuery();
+
+            readerMySQL.Cancel();
+        }
+        public static void setPlayerNume(string target, string nume)
+        {
+            string stringMySQLQuery = "UPDATE `users` SET `nume` = '" + nume + "' WHERE `username` = '" + target + "'";
+
+            MySqlCommand readerMySQL = new MySqlCommand(stringMySQLQuery, mysqlHandler.connectionMySQL);
+
+            readerMySQL.ExecuteNonQuery();
+
+            readerMySQL.Cancel();
+        }
+        public static void setPlayerPrenume(string target, string prenume)
+        {
+            string stringMySQLQuery = "UPDATE `users` SET `prenume` = '" + prenume + "' WHERE `username` = '" + target + "'";
+
+            MySqlCommand readerMySQL = new MySqlCommand(stringMySQLQuery, mysqlHandler.connectionMySQL);
+
+            readerMySQL.ExecuteNonQuery();
+
+            readerMySQL.Cancel();
+        }
+        public static void setPlayerCNP(string target, string cnp)
+        {
+            string stringMySQLQuery = "UPDATE `users` SET `cnp` = '" + cnp + "' WHERE `username` = '" + target + "'";
+
+            MySqlCommand readerMySQL = new MySqlCommand(stringMySQLQuery, mysqlHandler.connectionMySQL);
+
+            readerMySQL.ExecuteNonQuery();
+
+            readerMySQL.Cancel();
+        }
+        public static void setPlayerWarning(string target, string warning)
+        {
+            string stringMySQLQuery = "UPDATE `users` SET `warning` = '" + warning + "' WHERE `username` = '" + target + "'";
+
+            MySqlCommand readerMySQL = new MySqlCommand(stringMySQLQuery, mysqlHandler.connectionMySQL);
+
+            readerMySQL.ExecuteNonQuery();
+
+            readerMySQL.Cancel();
+        }
+        public static void setPlayerVarsta(string target, string varsta)
+        {
+            string stringMySQLQuery = "UPDATE `users` SET `varsta` = '" + varsta + "' WHERE `username` = '" + target + "'";
+
+            MySqlCommand readerMySQL = new MySqlCommand(stringMySQLQuery, mysqlHandler.connectionMySQL);
+
+            readerMySQL.ExecuteNonQuery();
+
+            readerMySQL.Cancel();
+        }
+        public static void setPlayerCard(string target, int card)
+        {
+            string stringMySQLQuery = "UPDATE `users` SET `card` = '" + card + "' WHERE `username` = '" + target + "'";
+
+            MySqlCommand readerMySQL = new MySqlCommand(stringMySQLQuery, mysqlHandler.connectionMySQL);
+
+            readerMySQL.ExecuteNonQuery();
+
+            readerMySQL.Cancel();
+        }
+        public static void setPlayerTara(string target, string tara)
+        {
+            string stringMySQLQuery = "UPDATE `users` SET `tara` = '" + tara + "' WHERE `username` = '" + target + "'";
+
+            MySqlCommand readerMySQL = new MySqlCommand(stringMySQLQuery, mysqlHandler.connectionMySQL);
+
+            readerMySQL.ExecuteNonQuery();
+
+            readerMySQL.Cancel();
+        }
+        public static void setPlayerBan(string target, int ban)
+        {
+            string stringMySQLQuery = "UPDATE `users` SET `banned` = '" + ban + "' WHERE `username` = '" + target + "'";
+
+            MySqlCommand readerMySQL = new MySqlCommand(stringMySQLQuery, mysqlHandler.connectionMySQL);
+
+            readerMySQL.ExecuteNonQuery();
+
+            readerMySQL.Cancel();
+        }
+        public static void setPlayerViata(string target, int valoare)
+        {
+            string stringMySQLQuery = "UPDATE `users` SET `viata` = '" + valoare + "' WHERE `username` = '" + target + "'";
+
+            MySqlCommand readerMySQL = new MySqlCommand(stringMySQLQuery, mysqlHandler.connectionMySQL);
+
+            readerMySQL.ExecuteNonQuery();
+
+            readerMySQL.Cancel();
+        }
+        public static void setPlayerArmura(string target, int valoare)
+        {
+            string stringMySQLQuery = "UPDATE `users` SET `armura` = '" + valoare + "' WHERE `username` = '" + target + "'";
+
+            MySqlCommand readerMySQL = new MySqlCommand(stringMySQLQuery, mysqlHandler.connectionMySQL);
+
+            readerMySQL.ExecuteNonQuery();
+
+            readerMySQL.Cancel();
+        }
+        public static void setPlayerMancare(string target, float valoare)
+        {
+            string stringMySQLQuery = "UPDATE `users` SET `mancare` = '" + valoare + "' WHERE `username` = '" + target + "'";
+
+            MySqlCommand readerMySQL = new MySqlCommand(stringMySQLQuery, mysqlHandler.connectionMySQL);
+
+            readerMySQL.ExecuteNonQuery();
+
+            readerMySQL.Cancel();
+        }
+        public static void setPlayerSete(string target, float valoare)
+        {
+            string stringMySQLQuery = "UPDATE `users` SET `sete` = '" + valoare + "' WHERE `username` = '" + target + "'";
+
+            MySqlCommand readerMySQL = new MySqlCommand(stringMySQLQuery, mysqlHandler.connectionMySQL);
+
+            readerMySQL.ExecuteNonQuery();
+
+            readerMySQL.Cancel();
+        }
+        #endregion
+
+
+
+        #endregion

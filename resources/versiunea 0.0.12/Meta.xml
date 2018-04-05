@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<meta>
+  <info name="Romania RolePlay" author="OperatronArts" type="gamemode"/>
+
+
+  <assembly ref="System.Xml.dll"/>
+  <assembly ref="System.Data.dll"/>
+  <assembly ref="MySql.Data.dll"/>
+  <assembly ref="Newtonsoft.Json.dll" />
+  
+  <!--CEF HTML-->
+  <file src="client/db/login/css/style.css" />
+  <file src="client/db/login/login.html" />
+
+  <file src="client/db/register/css/style.css" />
+  <file src="client/db/register/register.html" />
+
+
+  <!--Javascript clientside-->
+  <!--Login & Register System-->
+
+  <!--JS-->
+
+  <script src="client/core/MoneyHUD.js" type="client" lang="javascript" />
+  <script src="client/core/strazi.js" type="client" lang="javascript" />
+  <script src="client/core/joburi.js" type="client" lang="javascript" />
+  <script src="client/core/core.js" type="client" lang="javascript" />
+  
+  <!--C# Serverside-->
+  <script src="server/core/gamemode.cs" type="server" lang="csharp" />
+  <script src="server/core/misc.cs" type="server" lang="csharp"/>
+  <script src="server/database/mysqlHandler.cs" type="server" lang="csharp" />
+  <script src="server/core/caractercreator.cs" type="server" lang="csharp" />
+  <script src="server/core/inventorysystem.cs" type="server" lang="csharp" />
+  
+  <!-- OnPlayerConnect all stufs-->
+  <!--CSHARP-->
+    <script src="server/database/databaseMaster.cs" type="server" lang="csharp" />
+  <!--JS-->
+  <script src="client/db/databaseJS.js" type="client" lang="javascript" />
+  <script src="client/core/caractercreator.js" type="client" lang="javascript" />
+</meta>

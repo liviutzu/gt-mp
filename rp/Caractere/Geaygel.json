@@ -1,0 +1,88 @@
+{
+  "Gender": 0,
+  "Parents": {
+    "Father": 2,
+    "Mother": 31,
+    "Similarity": 0.06,
+    "SkinSimilarity": 1.0
+  },
+  "Features": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "Appearance": [
+    {
+      "Value": 255,
+      "Opacity": 1.0
+    },
+    {
+      "Value": 255,
+      "Opacity": 0.05
+    },
+    {
+      "Value": 255,
+      "Opacity": 1.0
+    },
+    {
+      "Value": 255,
+      "Opacity": 1.0
+    },
+    {
+      "Value": 255,
+      "Opacity": 1.0
+    },
+    {
+      "Value": 255,
+      "Opacity": 1.0
+    },
+    {
+      "Value": 255,
+      "Opacity": 1.0
+    },
+    {
+      "Value": 255,
+      "Opacity": 1.0
+    },
+    {
+      "Value": 255,
+      "Opacity": 1.0
+    },
+    {
+      "Value": 255,
+      "Opacity": 1.0
+    },
+    {
+      "Value": 255,
+      "Opacity": 1.0
+    }
+  ],
+  "Hair": {
+    "Hair": 14,
+    "Color": 40,
+    "HighlightColor": 7
+  },
+  "EyebrowColor": 0,
+  "BeardColor": 0,
+  "EyeColor": 0,
+  "BlushColor": 0,
+  "LipstickColor": 0,
+  "ChestHairColor": 0
+}

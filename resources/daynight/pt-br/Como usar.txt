@@ -1,0 +1,1 @@
+Troque o arquivo DayNight.cs da pasta pt-br pelo da pasta daynight
